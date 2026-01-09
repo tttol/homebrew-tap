@@ -1,28 +1,28 @@
 class Canido < Formula
   desc "A CLI tool to view IAM policies attached to the current AWS role"
   homepage "https://github.com/tttol/canido"
-  version "0.2.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/tttol/canido/releases/download/v#{version}/canido-aarch64-apple-darwin.tar.gz"
-      sha256 "e0c6a1210645a4b6d01a267a6a0d2fa162efdc96a622eba68fb36a87a2f3be77"
+      sha256 "534f36b047ff040b0fdfbdf26d8cd16afce966fe9b1d7c1a126ac4f0778de40b"
     end
     on_intel do
       url "https://github.com/tttol/canido/releases/download/v#{version}/canido-x86_64-apple-darwin.tar.gz"
-      sha256 "ff2d0adea025f7f9b22f06b77229bc1f8578e5582ef9fee628260fbef39a5bc5"
+      sha256 "eeb3bea3fbb0315e6c962b7f89564c310ac3c960f30679c2dbe3683bb7c252bd"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/tttol/canido/releases/download/v#{version}/canido-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "297faa13467f6415c186bf30aea6fa7c6432fa8e2548effaab92da121d48b72c"
+      sha256 "740b63d9b324b637dc1dbeba7e722324779acbd25b1045bb2ba2f50cff313630"
     end
     on_intel do
       url "https://github.com/tttol/canido/releases/download/v#{version}/canido-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "31bc5cd05d86c63a4c30bcbcc7930c9e31659f999d0f72b8f2d00333c4e2f873"
+      sha256 "8f4533dfe63fbedf3b65ce4ab4902af9aec7fc9e38e6fdb435b961c987b0a8da"
     end
   end
 
