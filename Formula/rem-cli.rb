@@ -27,7 +27,7 @@ class RemCli < Formula
   end
 
   def install
-    bin.install "rem-cli"
+    bin.install "rem"
   end
 
   test do
