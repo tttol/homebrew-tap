@@ -1,5 +1,5 @@
 class RemCli < Formula
-  desc "A CLI tool to view IAM policies attached to the current AWS role"
+  desc "A CLI tool for TODO management"
   homepage "https://github.com/tttol/rem-cli"
   version "0.1.0"
   license "MIT"
