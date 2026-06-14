@@ -18,16 +18,16 @@ fi
 
 echo "Fetching SHA256 hashes for version $VERSION..."
 
-MACOS_ARM_SHA=$(curl -sL "https://github.com/tttol/rem-cli/releases/download/v${VERSION}/rem-cli-aarch64-apple-darwin.tar.gz" | shasum -a 256 | cut -d' ' -f1)
+MACOS_ARM_SHA=$(curl --fail --silent --show-error --location "https://github.com/tttol/rem-cli/releases/download/v${VERSION}/rem-cli-aarch64-apple-darwin.tar.gz" | shasum -a 256 | cut -d' ' -f1)
 echo "macOS ARM64: $MACOS_ARM_SHA"
 
-MACOS_INTEL_SHA=$(curl -sL "https://github.com/tttol/rem-cli/releases/download/v${VERSION}/rem-cli-x86_64-apple-darwin.tar.gz" | shasum -a 256 | cut -d' ' -f1)
+MACOS_INTEL_SHA=$(curl --fail --silent --show-error --location "https://github.com/tttol/rem-cli/releases/download/v${VERSION}/rem-cli-x86_64-apple-darwin.tar.gz" | shasum -a 256 | cut -d' ' -f1)
 echo "macOS x86_64: $MACOS_INTEL_SHA"
 
-LINUX_ARM_SHA=$(curl -sL "https://github.com/tttol/rem-cli/releases/download/v${VERSION}/rem-cli-aarch64-unknown-linux-gnu.tar.gz" | shasum -a 256 | cut -d' ' -f1)
+LINUX_ARM_SHA=$(curl --fail --silent --show-error --location "https://github.com/tttol/rem-cli/releases/download/v${VERSION}/rem-cli-aarch64-unknown-linux-gnu.tar.gz" | shasum -a 256 | cut -d' ' -f1)
 echo "Linux ARM64: $LINUX_ARM_SHA"
 
-LINUX_INTEL_SHA=$(curl -sL "https://github.com/tttol/rem-cli/releases/download/v${VERSION}/rem-cli-x86_64-unknown-linux-gnu.tar.gz" | shasum -a 256 | cut -d' ' -f1)
+LINUX_INTEL_SHA=$(curl --fail --silent --show-error --location "https://github.com/tttol/rem-cli/releases/download/v${VERSION}/rem-cli-x86_64-unknown-linux-gnu.tar.gz" | shasum -a 256 | cut -d' ' -f1)
 echo "Linux x86_64: $LINUX_INTEL_SHA"
 
 echo "Updating $FORMULA_FILE..."
