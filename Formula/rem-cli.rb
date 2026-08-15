@@ -1,28 +1,28 @@
 class RemCli < Formula
   desc "A CLI tool for TODO management"
   homepage "https://github.com/tttol/rem-cli"
-  version "1.6.0"
+  version "1.6.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/tttol/rem-cli/releases/download/v#{version}/rem-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "9a550298a3af1d65ce7a88e47ac6a451167a8756a4af3f3fb879b45339dd3bbd"
+      sha256 "78d9a0c7e0285410ac43e808160ac9087240e036138bf0766b7e9831403a7c9b"
     end
     on_intel do
       url "https://github.com/tttol/rem-cli/releases/download/v#{version}/rem-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "e5f57f173e03f6758171fffd95db66770c92da867cf30d4d77c3fb6f643ddf75"
+      sha256 "0d758e7755fe8ca730d0aa90c9b58b7e35c2d6da1c2bc3095fc475078b42afab"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/tttol/rem-cli/releases/download/v#{version}/rem-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3d5ecd379b0184263c8d55370d6692e85db29922a66acc3b7090966091463374"
+      sha256 "ac19f1db8db5cc4c7301c184bdcb7ddfa96b34c13ff16f72bb914c8b12ee41af"
     end
     on_intel do
       url "https://github.com/tttol/rem-cli/releases/download/v#{version}/rem-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7afada41a0dd875b4e2c07932c6f52155058a9d9aad4d3c926d9700af9bc55a4"
+      sha256 "dd1f9c2fd3d3081d6115645ae5570f7d81073c0c64c60b1a628f73e692bf0c13"
     end
   end
 
